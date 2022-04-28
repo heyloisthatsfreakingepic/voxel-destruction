@@ -20,7 +20,8 @@ public class Destruction : MonoBehaviour
 		cubeDepth = transform.localScale.x;
 
 		//gameObject.GetComponent<MeshRenderer>().enabled = false;
-		mesh.gameObject.GetComponent<Transform>().localScale = new Vector3(cubeWidth, cubeHeight, cubeDepth);		
+		mesh.gameObject.GetComponent<Transform>().localScale = new Vector3(cubeScale, cubeScale, cubeScale);
+		
 	}
 
 	private void OnCollisionEnter(UnityEngine.Collision collision)
